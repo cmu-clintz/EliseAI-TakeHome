@@ -34,7 +34,8 @@ export default function App() {
     form.append('file', file)
 
     try {
-      const res = await fetch('/api/process', { method: 'POST', body: form })
+      const base = import.meta.env.VITE_API_URL ?? ''
+      const res = await fetch(`${base}/api/process`, { method: 'POST', body: form })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error ?? 'Unknown error')
       setLeads(data.leads)
