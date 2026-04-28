@@ -1,0 +1,74 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app-header {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.app-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+}
+
+.loading-msg {
+  text-align: center;
+  color: #6b7280;
+  padding: 1rem;
+}
+
+.loading-sub {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #9ca3af;
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.error-banner button {
+  margin-left: auto;
+  background: none;
+  border: 1px solid #fca5a5;
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+  color: #b91c1c;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.results-controls {
+  display: flex;
+  align-items: center;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.back-btn:hover { color: #111827; }
